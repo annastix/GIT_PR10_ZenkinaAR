@@ -1,0 +1,9 @@
+name: ActionPush 
+on: push   
+
+jobs:
+    JobOne:
+        runs-on: windows-latest
+        steps: 
+            - name: stepOne
+              run: dotnet run --project ./ConsoleApp_Zenkina.csproj
