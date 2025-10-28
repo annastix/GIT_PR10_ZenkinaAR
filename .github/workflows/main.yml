@@ -1,1 +1,11 @@
+name: ActionPush 
+on: push   
 
+jobs:
+    JobOne:
+        runs-on: windows-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v5.0.0
+            - name: stepOne
+              run: dotnet run --project ./ConsoleApp_Zenkina.csproj
